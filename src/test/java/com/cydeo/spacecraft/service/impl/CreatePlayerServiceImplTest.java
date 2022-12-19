@@ -41,4 +41,23 @@ class CreatePlayerServiceImplTest {
 
     }
 
+    @Test
+    public void should_create_player_with_extra_shield_boost_type_and_level_easy(){
+
+        //given
+        CreateGameDTO createGameDTO = new CreateGameDTO();
+        createGameDTO.setBoost(Boost.EXTRA_SHIELD);
+        createGameDTO.setLevel(Level.EASY);
+        createGameDTO.setUsername("username");
+
+        //when
+        Player player = createPlayerService.createPlayer(createGameDTO);
+
+        //then
+        assertEquals(player.getHealth(), 4145);
+        assertEquals(player.getArmor(), 242);
+        assertEquals(player.getShootPower(), 10);
+
+    }
+
 }
