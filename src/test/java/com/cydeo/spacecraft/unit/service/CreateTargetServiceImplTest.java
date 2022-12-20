@@ -1,7 +1,8 @@
-package com.cydeo.spacecraft.service.impl;
+package com.cydeo.spacecraft.unit.service;
 
 import com.cydeo.spacecraft.entity.Target;
 import com.cydeo.spacecraft.enumtype.Level;
+import com.cydeo.spacecraft.service.impl.CreateTargetServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

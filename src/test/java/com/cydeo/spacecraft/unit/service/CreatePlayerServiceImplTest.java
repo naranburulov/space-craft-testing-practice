@@ -1,9 +1,10 @@
-package com.cydeo.spacecraft.service.impl;
+package com.cydeo.spacecraft.unit.service;
 
 import com.cydeo.spacecraft.dto.CreateGameDTO;
 import com.cydeo.spacecraft.entity.Player;
 import com.cydeo.spacecraft.enumtype.Boost;
 import com.cydeo.spacecraft.enumtype.Level;
+import com.cydeo.spacecraft.service.impl.CreatePlayerServiceImpl;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
