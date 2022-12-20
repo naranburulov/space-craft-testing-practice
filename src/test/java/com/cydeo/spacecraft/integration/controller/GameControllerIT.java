@@ -74,6 +74,8 @@ public class GameControllerIT{
                         .content(objectMapper.writeValueAsString(createHitRequest)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.responseMessage").value("SUCCESS"))
+                .andExpect(jsonPath("$.isWin").value(true))
+                .andExpect(jsonPath("$.isEnded").value(true))
                 .andReturn();
 
     }
